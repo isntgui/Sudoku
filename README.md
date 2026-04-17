@@ -46,7 +46,7 @@ SUDOKU
     │     └─── script.js
     │       
     └─── public
-          └─── idnex.html
+          └─── index.html
 </pre>
 
 ---
