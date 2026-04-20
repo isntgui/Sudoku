@@ -202,11 +202,9 @@ Response:
 ##  Melhorias futuras
 
 * Suporte a Sudoku 16x16
-* Modo escuro 🌙
 * Upload de imagem do Sudoku 📸
 * Resolver múltiplos puzzles em batch
 * Deploy online (Render / Railway)
-* Animações mais suaves
 
 ---
 
