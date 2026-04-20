@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #e5e7eb;
+    text-align: center;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.sudoku {
+    border-collapse: collapse;
+    margin: 20px 0;
+    border: 3px solid #e5e7eb;
+    background: #111827;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.sudoku td {
+    padding: 0;
+    border: 1px solid #374151;
+}
+
+.sudoku input {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'JetBrains Mono', monospace;
+    background: transparent;
+    color: #f9fafb;
+    border: none;
+    outline: none;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.sudoku input:hover {
+    background: #1f2937;
+}
+
+.sudoku input:focus {
+    background: #2563eb;
+    color: white;
+    transform: scale(1.05);
+}
+
+.sudoku td:nth-child(3n) {
+    border-right: 3px solid #e5e7eb;
+}
+
+.sudoku tr:nth-child(3n) td {
+    border-bottom: 3px solid #e5e7eb;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px 18px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#botaoSolve {
+    background: #22c55e;
+    color: white;
+}
+
+#botaoSolve:hover {
+    background: #16a34a;
+    transform: translateY(-2px);
+}
+
+#botaoReset {
+    background: #ef4444;
+    color: white;
+    display: none;
+}
+
+#botaoReset:hover {
+    background: #dc2626;
+    transform: translateY(-2px);
+}
+
+.fill {
+    background: #22c55e !important;
+    color: white;
+    transform: scale(1.1);
+}
+
+.erase {
+    background: #ef4444 !important;
+    color: white;
+    transform: scale(0.9);
+}
